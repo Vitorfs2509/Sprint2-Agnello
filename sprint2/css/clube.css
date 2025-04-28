@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  color: #3d2e1e;
+}
+
+header, footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f4ec;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 500;
+  margin: 0;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+p {
+  font-weight: 300;
+  max-width: 800px;
+  margin: 10px auto;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.how-it-works {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.how-it-works div {
+  flex: 1;
+  padding: 20px;
+  min-width: 150px;
+}
+
+.how-it-works img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.plan-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.plan {
+  background-color: #f9f8f6;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 240px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-5px);
+}
+
+.plan h3 {
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  color: #fff;
+}
+
+.plan-essencial h3 { background-color: #a59d45; }
+.plan-classico h3 { background-color: #7b3b35; }
+.plan-reserva h3 { background-color: #3c2c26; }
+.plan-empresarial h3 { background-color: #3d3628; }
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.plan ul li {
+  padding: 5px 0;
+}
+
+.plan strong {
+  display: block;
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.plan button {
+  background-color: #3d3628;
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.plan-essencial button { background-color: #a59d45; }
+.plan-classico button { background-color: #7b3b35; }
+.plan-reserva button { background-color: #3c2c26; }
+.plan-empresarial button { background-color: #3d3628; }
+
+.plan button:hover {
+  background-color: #5e5640;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.benefits div {
+  text-align: center;
+  padding: 20px;
+  width: 160px;
+  font-size: 14px;
+}
+
+.benefits img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.cta {
+  margin-top: 40px;
+  padding: 30px 20px;
+  background-color: #f4f2ec;
+  text-align: center;
+}
+
+.cta button {
+  background-color: #3d3628;
+  color: white;
+  padding: 12px 40px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.cta button:hover {
+  background-color: #5e5640;
+}
+
+.image-banner {
+  margin-top: 40px;
+}
+
+.image-banner img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  border-radius: 6px;
+}

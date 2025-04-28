@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f7f4ed;
+}
+
+/* TOPO */
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-icone {
+  font-size: 24px;
+  color: #3a2e1d;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+  color: #3a2e1d;
+  line-height: 1;
+}
+
+.logo-topo {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.logo-principal {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.busca {
+  display: flex;
+  background-color: #eeeae0;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 30%;
+}
+
+.busca input {
+  border: none;
+  background: transparent;
+  padding: 10px;
+  flex: 1;
+}
+
+.busca button {
+  background: transparent;
+  border: none;
+  padding: 0 10px;
+}
+
+.busca img {
+  width: 16px;
+  height: 16px;
+}
+
+.icones {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+  color: #3a2e1d;
+}
+
+.icone a {
+  text-decoration: none;
+  color: #3a2e1d;
+  margin-left: 5px;
+}
+
+/* TÍTULO */
+.titulo {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.titulo h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: #3a2e1d;
+}
+
+/* FILTROS */
+.filtros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filtros input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.filtros button {
+  background: none;
+  border: none;
+}
+
+.filtros img {
+  width: 16px;
+}
+
+/* GRADE DE PRODUTORES */
+.grade-produtores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 40px 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.card img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  background-color: #4d3c2d;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #3a2e1d;
+}
+
+}
+/* RODAPÉ INSTITUCIONAL */
+.rodape {
+  background-color: #f0ede6;
+  padding: 40px 60px;
+  font-family: 'Inter', sans-serif;
+  color: #3a2e1d;
+}
+
+.container-rodape {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.logo-rodape h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.coluna {
+  min-width: 200px;
+}
+
+.coluna h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.coluna ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.coluna ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.coluna ul li a {
+  text-decoration: none;
+  color: #3a2e1d;
+}
+
+.coluna ul li a:hover {
+  text-decoration: underline;
+}

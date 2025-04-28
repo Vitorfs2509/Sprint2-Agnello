@@ -1,0 +1,152 @@
+body {
+    font-family: 'Crimson Text', serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #222;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+  }
+  
+  .logo {
+    font-size: 1.2rem;
+  }
+  
+  .search-bar input {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 200px;
+  }
+  
+  .menu-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  
+  .container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  input {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .btn-entrar {
+    background-color: #6a5845;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .esqueceu {
+    font-size: 0.8rem;
+    text-align: right;
+    display: block;
+    color: #666;
+  }
+  
+  .divider {
+    text-align: center;
+    position: relative;
+    margin: 1rem 0;
+  }
+  
+  .divider::before, .divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #ccc;
+  }
+  
+  .divider::before {
+    left: 0;
+  }
+  
+  .divider::after {
+    right: 0;
+  }
+  
+  .divider span {
+    background: white;
+    padding: 0 10px;
+    color: #666;
+  }
+  
+  .btn-google, .btn-apple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.6rem;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+  }
+  
+  .btn-google {
+    border-color: #900;
+    color: #900;
+  }
+  
+  .btn-apple {
+    border-color: black;
+    color: black;
+  }
+  
+  .cadastro {
+    font-size: 0.9rem;
+  }
+  
+  .footer {
+    background: #f5f2ec;
+    padding: 2rem;
+    margin-top: 4rem;
+    color: #222;
+  }
+  
+  .footer-logo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-cols {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+  }
+  
+  .footer-cols div {
+    max-width: 250px;
+  }
+  

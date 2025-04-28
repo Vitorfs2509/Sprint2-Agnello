@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.icon-tres-pontos {
+    width: 32px;
+    height: 32px;
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vinheria {
+    font-size: 16px;
+    font-family: 'Crimson Text', serif;
+    color: #000;
+}
+
+.agnello {
+    font-size: 24px;
+    font-family: 'Crimson Text', serif;
+    color: #000;
+}
+
+.barra-pesquisa {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    background-color: #eeeae3;
+    border: 1px solid #eeeae3;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+}
+
+.barra-pesquisa input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px;
+    background-color: transparent;
+    color: #000;
+}
+
+.icon-lupa {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.usuario-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-usuario {
+    width: 32px;
+    height: 32px;
+}
+
+.link-usuario {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.link-usuario:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+.user-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-icons img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+.kits {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.kit-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.kit {
+    text-align: center;
+    background-color: #eeeae3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 350px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-box {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.description {
+    text-align: left;
+    width: 100%;
+}
+
+.description h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.price-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.ver-mais-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.ver-mais {
+    padding: 10px 20px;
+    background-color: #800000;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #eeeae3;
+    padding: 40px;
+    gap: 20px;
+}
+
+.footer-container h1, .footer-container h2 {
+    margin-bottom: 10px;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-container ul li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.footer-container a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}

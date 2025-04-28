@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Crimson Text", serif;
+  background: #fff9f0;
+  color: #222;
+  line-height: 1.5;
+}
+
+.header {
+  background: #fff9f0;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-dots {
+  font-size: 1.5rem;
+  color: #6b5a4b;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  color: #6b5a4b;
+}
+
+.logo h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #8e5a3a;
+}
+
+.search-bar {
+  position: relative;
+  width: 400px;
+  margin: 0 2rem;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  border: none;
+  border-radius: 999px;
+  background: #edeadc;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-bar i.fa-search {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  color: #6b5a4b;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.actions > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #6b5a4b;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.actions > div:hover {
+  color: #8e5a3a;
+}
+
+.actions i {
+  font-size: 1.2rem;
+}
+
+.user-action span {
+  font-size: 0.9rem;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #8e5a3a;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.close-sidebar {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-nav ul li {
+  margin: 1rem 0;
+}
+
+.sidebar-nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.footer {
+  background: #f5f2ec;
+  padding: 2rem;
+  margin-top: 4rem;
+  color: #222;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-cols {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.footer-cols div {
+  max-width: 250px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+.category-section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.category-intro h2 {
+  font-size: 2rem;
+  color: #6b5a4b;
+  margin-bottom: 0.5rem;
+}
+
+.category-intro h3 {
+  font-size: 1.2rem;
+  color: #8e5a3a;
+  margin-bottom: 3rem;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.category-item {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.category-item:hover {
+  transform: translateY(-5px);
+}
+
+.category-item img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.category-item p {
+  font-size: 1rem;
+  color: #4a2c2a;
+}
+
+.club-section {
+  background: #fff;
+  padding: 4rem 0;
+}
+
+.club-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.club-content {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+.club-content h2 {
+  font-size: 2rem;
+  color: #6b5a4b;
+  margin-bottom: 0.5rem;
+}
+
+.club-content h3 {
+  font-size: 1.5rem;
+  color: #8e5a3a;
+  margin-bottom: 1rem;
+}
+
+.club-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4a2c2a;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #8e5a3a;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #6b5a4b;
+}
+
+.club-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.club-image {
+  width: 100%;
+  height: auto;
+  max-width: 650px;
+  object-fit: cover;
+}
+
+.wine-cards-section {
+  padding: 4rem 0;
+  background: #fdf8f3;
+}
+
+.wine-cards-section .section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #6b5a4b;
+  margin-bottom: 0.5rem;
+}
+
+.wine-cards-section .section-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #8e5a3a;
+  margin-bottom: 2rem;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  justify-content: flex-start;
+  overflow-x: auto;
+  padding: 0 1rem;
+}
+
+.wine-card {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 2rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.wine-card:hover {
+  transform: translateY(-5px);
+}
+
+.wine-image-container {
+  flex: 0 0 50%;
+  background: #fdf8f3;
+}
+
+.wine-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wine-info-container {
+  flex: 0 0 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wine-info-container h3 {
+  font-size: 1.8rem;
+  color: #4a2c2a;
+  margin-bottom: 1rem;
+}
+
+.wine-info-container p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.wine-harmonizacao {
+  display: block;
+}
+
+.wine-harmonizacao span {
+  font-size: 1rem;
+  color: #6b5a4b;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.harmon-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.harmon-icons img {
+  width: 40px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .search-bar {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .logo,
+  .actions,
+  .menu-dots {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .club-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .club-content {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .club-image {
+    max-height: 300px;
+  }
+  .category-list {
+    gap: 1.5rem;
+  }
+  .category-item {
+    width: 100px;
+  }
+  .category-intro h2 {
+    font-size: 1.6rem;
+  }
+  .category-intro h3 {
+    font-size: 1rem;
+  }
+  .wine-card {
+    flex-direction: column;
+  }
+  .wine-image-container,
+  .wine-info-container {
+    flex: 1 0 auto;
+    padding: 1rem;
+  }
+}

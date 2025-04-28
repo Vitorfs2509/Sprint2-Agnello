@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil - Vinheria Agnello</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css\perfil.css">
+
+</head>
+<body>
+  <header>
+    <h1>VINHERIA <strong>AGNELLO</strong></h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Digite ou cole o Código">
+    </div>
+    <nav class="icons">
+      <span>🔍</span>
+      <span>❤️</span>
+      <span>🛒</span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="profile">
+      <img src="https://via.placeholder.com/80" alt="Foto de perfil">
+      <div class="profile-info">
+        <p class="user-name">Usuário</p>
+        <div class="user-data">
+          <div>
+            <strong>Perfil Cadastrado:</strong> Sim
+            <button>Editar</button>
+          </div>
+          <div>
+            <strong>CPF:</strong> ***.***.***-**
+            <button>Editar</button>
+          </div>
+          <div>
+            <strong>Data de Nascimento:</strong> dd/mm/aaaa
+            <button>Editar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-list">
+      <div class="menu-item">
+        <div class="icon">📦</div>
+        <div class="text">
+          <h3>MEUS PEDIDOS</h3>
+          <p>Veja histórico e acompanhe suas compras</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="icon">💳</div>
+        <div class="text">
+          <h3>CARTÕES</h3>
+          <p>Cartões salvos na sua conta</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="icon">⭐</div>
+        <div class="text">
+          <h3>FAVORITOS</h3>
+          <p>Consulte sua lista de produtos favoritos</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="icon">🏠</div>
+        <div class="text">
+          <h3>ENDEREÇOS</h3>
+          <p>Endereços salvos na sua conta</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="icon">🎁</div>
+        <div class="text">
+          <h3>ASSINATURA</h3>
+          <p>Controle seus benefícios</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="icon">🔒</div>
+        <div class="text">
+          <h3>SEGURANÇA</h3>
+          <p>Configure as seguranças da sua conta</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h2>VINHERIA <strong>AGNELLO</strong></h2>
+    <p>© 2025 Todos os direitos reservados.</p>
+  </footer>
+  <script>
+    const searchInput = document.querySelector('.search-bar input');
+const searchIcon = document.querySelector('.icons span:nth-child(1)');
+searchIcon.addEventListener('click', function() {
+    if (searchInput.value.trim() !== '') {
+        alert('Buscando código: ' + searchInput.value);
+    } else {
+        alert('Digite um código para buscar.');
+    }
+});
+
+const heartIcon = document.querySelector('.icons span:nth-child(2)');
+heartIcon.addEventListener('click', function() {
+    alert('Acessando seus produtos favoritos.');
+});
+
+const cartIcon = document.querySelector('.icons span:nth-child(3)');
+cartIcon.addEventListener('click', function() {
+    alert('Abrindo seu carrinho de compras.');
+});
+
+const editButtons = document.querySelectorAll('.user-data button');
+editButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const newValue = prompt('Digite o novo valor:');
+        if (newValue) {
+            const textElement = button.previousSibling;
+            textElement.textContent = textElement.textContent.split(':')[0] + ': ' + newValue;
+        }
+    });
+});
+
+const menuItems = document.querySelectorAll('.menu-item');
+menuItems.forEach(item => {
+    item.addEventListener('mouseover', function() {
+        item.style.backgroundColor = '#f0f0f0';
+    });
+    item.addEventListener('mouseout', function() {
+        item.style.backgroundColor = 'white';
+    });
+    item.addEventListener('click', function() {
+        alert('Você selecionou: ' + item.querySelector('h3').textContent);
+    });
+});
+
+  </script>
+</body>
+</html>

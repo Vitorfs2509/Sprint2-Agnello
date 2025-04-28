@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f5f0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+  min-height: 100vh;
+}
+
+.form-section {
+  flex: 1;
+  max-width: 500px;
+}
+
+.logo h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #3e3426;
+}
+
+h1 {
+  color: #5a4c35;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+form input, form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #5a4c35;
+  background: transparent;
+  font-size: 16px;
+  color: #5a4c35;
+}
+
+.gender-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.gender-buttons button {
+  flex: 1;
+  padding: 8px;
+  background-color: #5a4c35;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.gender-buttons button:hover {
+  background-color: #3e3426;
+}
+
+.gender-buttons .active {
+  background-color: #3e3426;
+}
+
+.submit-button {
+  background-color: #5a4c35;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #3e3426;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  max-width: 90%;
+  height: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #5a4c35;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #3e3426;
+}

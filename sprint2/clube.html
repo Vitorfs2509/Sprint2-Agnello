@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clube Agnello</title>
+  <link rel="stylesheet" href="css/clube.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Clube Agnello</h1>
+    <p>Assinaturas para Todos os Momentos</p>
+  </header>
+
+  <section>
+    <div class="container">
+      <p>O Clube Vinheria Agnello foi criado para quem deseja explorar o mundo dos vinhos com curadoria especializada, garantindo exclusividade e bons momentos. Seja você um apreciador iniciante ou um verdadeiro sommelier, temos o plano ideal para você.</p>
+      <p><strong>Assinatura Empresarial</strong>: perfeita para eventos corporativos, hotéis, restaurantes e empresas que desejam oferecer experiências sofisticadas e personalizadas para seus clientes e colaboradores.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Como funciona?</h2>
+    <div class="how-it-works container">
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/1138/1138035.png" alt="Escolha seu plano">
+        <p>Escolha seu plano</p>
+      </div>
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" alt="Receba em casa">
+        <p>Receba em casa</p>
+      </div>
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/833/833314.png" alt="Aprenda e deguste">
+        <p>Aprenda e deguste</p>
+      </div>
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Benefícios">
+        <p>Benefícios</p>
+      </div>
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828673.png" alt="Assinatura flexível">
+        <p>Assinatura flexível</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Escolha seu plano</h2>
+    <div class="plan-section container">
+      <div class="plan plan-essencial">
+        <h3>Plano Essencial</h3>
+        <ul>
+          <li>Perfeito para iniciantes e apreciadores ocasionais</li>
+          <li>2 vinhos selecionados</li>
+          <li>Curadoria especializada</li>
+        </ul>
+        <strong>R$ 79,90/mês</strong>
+        <button class="subscribe-btn">Assinar</button>
+      </div>
+
+      <div class="plan plan-classico">
+        <h3>Plano Clássico</h3>
+        <ul>
+          <li>Para quem quer explorar variedades</li>
+          <li>3 vinhos premium</li>
+          <li>Conteúdo exclusivo</li>
+        </ul>
+        <strong>R$ 149,90/mês</strong>
+        <button class="subscribe-btn">Assinar</button>
+      </div>
+
+      <div class="plan plan-reserva">
+        <h3>Plano Reserva</h3>
+        <ul>
+          <li>A experiência completa</li>
+          <li>4 vinhos de regiões renomadas</li>
+          <li>Acesso a degustações</li>
+        </ul>
+        <strong>R$ 239,90/mês</strong>
+        <button class="subscribe-btn">Assinar</button>
+      </div>
+
+      <div class="plan plan-empresarial">
+        <h3>Plano Empresarial</h3>
+        <ul>
+          <li>Ideal para empresas</li>
+          <li>Vinhos sob medida</li>
+          <li>Condições especiais</li>
+        </ul>
+        <br>
+        <button class="proposal-btn">Solicite uma proposta</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Vantagens de ser um Assinante Vinheria Agnello</h2>
+    <div class="benefits container">
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/1534/1534102.png" alt="Brindes exclusivos">
+        <p>Brindes exclusivos</p>
+      </div>
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/1086/1086933.png" alt="Descontos na loja">
+        <p>Descontos na loja</p>
+      </div>
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png" alt="Frete facilitado">
+        <p>Frete facilitado</p>
+      </div>
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Eventos">
+        <p>Eventos</p>
+      </div>
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/566/566049.png" alt="Assinatura flexível">
+        <p>Assinatura flexível</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <p>Viva a experiência do vinho com mais praticidade e sofisticação!</p>
+    <button id="final-subscribe">ASSINAR</button>
+  </section>
+
+  <div class="image-banner">
+    <img src="https://images.unsplash.com/photo-1605276374109-cfbc2f78ba11" alt="Imagem de vinhos">
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Vinheria Agnello</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.subscribe-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        alert('Assinatura realizada com sucesso!');
+      });
+    });
+
+    document.querySelector('.proposal-btn').addEventListener('click', function() {
+      alert('Nossa equipe entrará em contato com você em breve!');
+    });
+
+    document.getElementById('final-subscribe').addEventListener('click', function() {
+      alert('Obrigado por escolher a Vinheria Agnello!');
+    });
+  </script>
+
+</body>
+</html>

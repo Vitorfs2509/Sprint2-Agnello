@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contate-nos - Vinheria Agnello</title>
+  <link rel="stylesheet" href="css/contato.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="menu">☰</div>
+    <div class="logo">VINHERIA <strong>AGNELLO</strong></div>
+    <div class="search">
+      <input type="text" placeholder="Pesquisar...">
+    </div>
+    <div class="icons">
+      <span>👤 <a href="#">Entre ou Cadastre</a></span>
+      <span>💬</span>
+      <span>🤍</span>
+      <span>🛒</span>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="left-side">
+      <h1>Contate-nos</h1>
+      <p>Telefone: (11) 99888-7766<br>Email: contato@vinheriaagnello.com<br>Endereço: Rua das Uvas, 123 - São Paulo, SP</p>
+      <div class="social-icons">
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/4b3b2a/facebook-new.png" alt="Facebook" /></a>
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/4b3b2a/instagram-new.png" alt="Instagram" /></a>
+      </div>
+    </section>
+
+    <section class="right-side">
+      <form id="contactForm">
+        <input type="text" placeholder="Coloque seu nome" required>
+        <input type="email" placeholder="Coloque um email válido" required>
+        <textarea rows="5" placeholder="Coloque sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <p>VINHERIA <strong>AGNELLO</strong></p>
+    </div>
+    <div class="footer-columns">
+      <div>
+        <h4>Links Úteis</h4>
+        <p>Home<br>Clube<br>Loja<br>Produtores<br>Kits fáceis</p>
+      </div>
+      <div>
+        <h4>Atendimento ao Cliente</h4>
+        <p>(11) 3344-5566<br>
+        atendimento@vinheriaagnello.com<br>
+        Rua das Uvas, 123 – São Paulo, SP<br>
+        Seg - Sex: 09h às 18h | Sáb: 10h às 14h<br>
+        FAQ – <a href="#">Perguntas Frequentes</a></p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p>@vinheriaAgnello<br>@vinheriaAgnello<br>Vinheria Agnello</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Mensagem enviada com sucesso!');
+      form.reset();
+    });
+  </script>
+</body>
+</html>

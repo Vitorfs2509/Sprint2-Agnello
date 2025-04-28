@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f3ef;
+    color: #333;
+}
+
+header {
+    background-color: #eeeae3;
+    padding: 10px 20px;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+    text-align: center;
+    color: #8B4513;
+}
+
+.search input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+}
+
+.user-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #eeeae3;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.sidebar h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #8B4513;
+    margin-bottom: 10px;
+}
+
+.expand-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.sidebar ul li input {
+    margin-right: 10px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-left: 20px;
+    flex-grow: 1;
+}
+
+.produto {
+    background-color: #eeeae3;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: scale(1.03);
+}
+
+.produto img {
+    width: 120px;
+    height: 240px;
+    object-fit: contain;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+}
+
+footer {
+    background-color: #eeeae3;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.company-name h1 {
+    margin: 0;
+    font-size: 2em;
+    font-family: 'Crimson Text', serif;
+    color: #8B4513;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.links-uteis, .atendimento-cliente, .contato {
+    margin-right: 20px;
+}
+
+.footer-links h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #8B4513;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-links ul li img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}

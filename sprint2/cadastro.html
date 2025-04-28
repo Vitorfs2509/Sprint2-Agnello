@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro - Vinheria Agnello</title>
+  <link rel="stylesheet" href="css\cadastro.css">
+</head>
+<body>
+
+<div class="container" id="cadastro-container">
+  <div class="form-section">
+    <div class="logo">
+      <h2>VINHERIA<br>AGNELLO</h2>
+    </div>
+    <h1>Cadastre-se agora!</h1>
+
+    <form id="cadastro-form">
+      <input type="text" placeholder="Nome" name="nome" required>
+      <input type="text" placeholder="Sobrenome" name="sobrenome" required>
+      <input type="text" placeholder="CPF" name="cpf" required>
+      <input type="email" placeholder="Email" name="email" required>
+      <input type="tel" placeholder="Telefone" name="telefone" required>
+
+      <label for="genero">Gênero</label>
+      <div class="gender-buttons" id="gender-buttons">
+        <button type="button" class="gender-btn">masculino</button>
+        <button type="button" class="gender-btn">feminino</button>
+        <button type="button" class="gender-btn">não informar</button>
+      </div>
+
+      <input type="date" name="data_nascimento" required>
+      <input type="password" placeholder="Senha" name="senha" required>
+
+      <button type="submit" class="submit-button">CADASTRAR</button>
+    </form>
+  </div>
+
+  <div class="image-section">
+    <img src="img\img\vinhocadastro.png" alt="Vinho e Taça">
+  </div>
+
+
+  <button class="close-button" id="close-button">✕</button>
+</div>
+
+<script>
+
+  const closeButton = document.getElementById('close-button');
+  const cadastroContainer = document.getElementById('cadastro-container');
+  const cadastroForm = document.getElementById('cadastro-form');
+  const genderButtons = document.querySelectorAll('.gender-btn');
+
+  closeButton.addEventListener('click', () => {
+    cadastroContainer.style.display = 'none';
+    cadastroForm.reset(); 
+    genderButtons.forEach(btn => btn.classList.remove('active'));
+  });
+
+
+  genderButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      genderButtons.forEach(btn => btn.classList.remove('active')); 
+      button.classList.add('active'); 
+    });
+  });
+
+
+  cadastroForm.addEventListener('submit', (e) => {
+    e.preventDefault(); 
+    alert('Cadastro enviado com sucesso!');
+    cadastroForm.reset(); 
+    genderButtons.forEach(btn => btn.classList.remove('active'));
+  });
+  
+</script>
+
+</body>
+</html>
